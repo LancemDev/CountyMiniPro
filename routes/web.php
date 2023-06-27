@@ -16,3 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/menu', function(){
+    return view('menu');
+});
+
+Route::get('/createNewGroup', function(){
+    return view('createNewGroup');
+})->name('createNewGroup');
+
+Route::get('/queryGroupRecords', function(){
+    return view('queryGroupRecords');
+})->name('queryGroupRecords');
+
+Route::get('/renewGroupRegistration', function(){
+    return view('renewGroupRegistration');
+})->name('renewGroupRegistration');
